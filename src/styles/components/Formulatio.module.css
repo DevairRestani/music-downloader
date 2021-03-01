@@ -1,0 +1,77 @@
+.FormularioContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.FormularioContainer h1 {
+  color: var(--title);
+  font-family: Rajdhani;
+  font-size: 4rem;
+
+  margin-bottom: 0.5rem;
+}
+
+.FormularioContainer form {
+  flex: 1;
+
+  display: flex;
+}
+
+.FormularioContainer form input {
+  flex: 3;
+
+  border: 2px solid var(--text-highlight);
+  border-right: 0;
+  border-radius: 10px 0 0 10px;
+
+  padding: 1rem;
+  color: var(--text);
+}
+
+.FormularioContainer form input::placeholder {
+  color: var(--text);
+}
+
+.FormularioContainer form button {
+  flex: 1;
+
+  border: 2px solid var(--text-highlight);
+  border-left: 0;
+  border-radius: 0 10px 10px 0;
+
+  background-color: var(--blue);
+
+  color: var(--white);
+  padding: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 0.2s;
+}
+
+.FormularioContainer form button svg {
+  margin-left: 0.5rem;
+}
+
+.FormularioContainer form button:hover {
+  background-color: var(--blue-dark);
+}
+
+@media (max-width: 480px) {
+  .FormularioContainer form {
+    flex-direction: column;
+  }
+
+  .FormularioContainer form input {
+    border: 2px solid var(--text-highlight);
+    border-radius: 10px;
+  }
+
+  .FormularioContainer form button {
+    border-radius: 10px;
+    margin-top: 0.5rem;
+  }
+}
