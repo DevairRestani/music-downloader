@@ -10,11 +10,7 @@ export default function Formulario() {
   function HandleSubmit(e: SyntheticEvent): void {
     e.preventDefault();
 
-    const fullUrl =
-      window.location.protocol +
-      '//' +
-      window.location.hostname +
-      (window.location.port ? ':' + window.location.port : '');
+    const fullUrl = window.location.origin;
 
     axios({
       url: fullUrl + '/api/Download/',
