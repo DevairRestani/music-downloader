@@ -1,0 +1,14 @@
+/* src/styles/components/Footer.module.css */
+.footer {
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+  border-top: 1px solid #eaeaea; /* Optional: adds a separator line */
+  margin-top: 2rem; /* Optional: adds some space above the footer */
+}
+
+.footer p {
+  margin: 0.25rem 0; /* Adds a little space between the lines in the footer */
+  font-size: 0.9rem;
+  color: #555; /* A slightly lighter text color */
+}
