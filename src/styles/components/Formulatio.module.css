@@ -60,6 +60,28 @@
   background-color: var(--blue-dark);
 }
 
+/* Feedback message styles */
+.feedbackMessage {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  text-align: center; /* Center align the text */
+}
+
+.successMessage {
+  background-color: #e6fffa;
+  border: 1px solid #38a169;
+  color: #2c7a7b;
+}
+
+.errorMessage {
+  background-color: #ffe5e5;
+  border: 1px solid #c53030;
+  color: #c53030;
+}
+
+
 @media (max-width: 480px) {
   .FormularioContainer form {
     flex-direction: column;
